@@ -1,9 +1,13 @@
 {
-  "name": "selenium-cucumber-typescript",
+  "name": "cucumber-selenium-typescript",
+  "description": "Simple example how to use Cucumber, Selenium and Typescript",
   "version": "1.0.0",
-  "main": "index.js",
+  "author": {
+    "name": "Isac",
+    "email": "isac_asj91@hotmail.com"
+  },
   "scripts": {
-    "test:integration": "cucumber-js src/features --require-module @babel/register"
+    "test:integration": "cucumber-js --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'"
   },
   "license": "MIT",
   "devDependencies": {

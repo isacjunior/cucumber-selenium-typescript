@@ -1,7 +1,7 @@
 import { Given, When, Then, BeforeAll, AfterAll } from 'cucumber'
-import { Builder, By, Key, until } from 'selenium-webdriver'
+import { Builder, By, Key, until, WebDriver } from 'selenium-webdriver'
 
-let driver
+let driver: WebDriver
 
 BeforeAll(async () => {
   driver = await new Builder().forBrowser('chrome').build()
