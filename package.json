@@ -1,25 +1,24 @@
 {
-  "name": "selenium-cucumber",
+  "name": "selenium-cucumber-typescript",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test:integration": "cucumber-js src/features --require-module @babel/register"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
     "@babel/plugin-transform-runtime": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-typescript": "^7.3.3",
-    "@types/jest": "^24.0.11",
+    "@babel/register": "^7.4.0",
+    "@types/cucumber": "^4.0.5",
     "@types/selenium-webdriver": "^3.0.15",
     "@typescript-eslint/eslint-plugin": "^1.5.0",
     "@typescript-eslint/parser": "^1.5.0",
     "chromedriver": "^2.46.0",
+    "cucumber": "^5.1.0",
     "eslint": "^5.15.3",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
@@ -27,7 +26,6 @@
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
     "geckodriver": "^1.16.0",
-    "jest": "^24.5.0",
     "selenium-webdriver": "^4.0.0-alpha.1",
     "typescript": "^3.3.4000"
   },
