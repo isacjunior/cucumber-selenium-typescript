@@ -7,7 +7,8 @@
     "email": "isac_asj91@hotmail.com"
   },
   "scripts": {
-    "test:integration": "cucumber-js -f node_modules/cucumber-pretty --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'"
+    "test:integration": "cucumber-js -f node_modules/cucumber-pretty --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'",
+    "type:check": "tsc --noEmit"
   },
   "license": "MIT",
   "devDependencies": {
