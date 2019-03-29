@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test:integration": "cucumber-js -f node_modules/cucumber-pretty --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'",
-    "type:check": "tsc --noEmit"
+    "type:check": "tsc --noEmit",
+    "eslint:check": "eslint ."
   },
   "license": "MIT",
   "devDependencies": {
