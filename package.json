@@ -7,7 +7,7 @@
     "email": "isac_asj91@hotmail.com"
   },
   "scripts": {
-    "test:integration": "cucumber-js --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'"
+    "test:integration": "cucumber-js -f node_modules/cucumber-pretty --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'"
   },
   "license": "MIT",
   "devDependencies": {
@@ -23,6 +23,7 @@
     "@typescript-eslint/parser": "^1.5.0",
     "chromedriver": "^2.46.0",
     "cucumber": "^5.1.0",
+    "cucumber-pretty": "^1.5.0",
     "eslint": "^5.15.3",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
