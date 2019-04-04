@@ -1,2 +1,4 @@
 node_modules/
 yarn-error.log
+report/cucumber_report.html
+report/cucumber_report.json

@@ -7,7 +7,9 @@
     "email": "isac_asj91@hotmail.com"
   },
   "scripts": {
-    "test:integration": "cucumber-js -f node_modules/cucumber-pretty --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'",
+    "cucumber": "cucumber-js -f node_modules/cucumber-pretty -f json:report/cucumber_report.json --require ./setup.js src/features/**/*.feature --require 'src/step-definitions/**/*.ts'",
+    "report": "babel-node --presets=@babel/preset-env report",
+    "test:integration": "yarn cucumber && yarn report",
     "type:check": "tsc --noEmit",
     "eslint:check": "eslint ."
   },
@@ -15,6 +17,7 @@
   "devDependencies": {
     "@babel/cli": "^7.2.3",
     "@babel/core": "^7.4.0",
+    "@babel/node": "^7.2.2",
     "@babel/plugin-transform-runtime": "^7.4.0",
     "@babel/preset-env": "^7.4.2",
     "@babel/preset-typescript": "^7.3.3",
@@ -25,6 +28,7 @@
     "@typescript-eslint/parser": "^1.5.0",
     "chromedriver": "^2.46.0",
     "cucumber": "^5.1.0",
+    "cucumber-html-reporter": "^4.0.5",
     "cucumber-pretty": "^1.5.0",
     "eslint": "^5.15.3",
     "eslint-config-standard": "^12.0.0",
