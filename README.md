@@ -1,7 +1,7 @@
 # Cucumber / Selenium / Typescript Starter
 Este é um simples exemplo de uma estrutura para realizar testes automatizados.
 
-## Sobre o challenge
+## Informações
 
 Aqui temos um pequeno boilerplate contendo Cucumber, Selenium e Typescript.
 * **Typescript**: linguagem padrão para nos dar tipos ao javascript.
